@@ -39,9 +39,7 @@ public class SecurityConfig {
                         // Cualquier otra ruta requiere autenticación
                         .anyRequest().authenticated()
                 )
-                .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class); // Agregar filtro JWT
-
-
+                .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class); // Agregar filtro JW
         return http.build();
     }
     @Bean

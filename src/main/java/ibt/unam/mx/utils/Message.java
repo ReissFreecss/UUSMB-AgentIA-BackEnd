@@ -5,6 +5,8 @@ public class Message {
     private TypesResponse type;
     private Object result;
 
+    public Message() {}
+
     public Message(String text, TypesResponse type) {
         this.text = text;
         this.type = type;

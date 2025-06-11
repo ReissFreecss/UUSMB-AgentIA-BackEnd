@@ -1,21 +1,21 @@
-2025-05-24T11:42:32.636-06:00  INFO 23132 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 23132 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T11:42:32.642-06:00  INFO 23132 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T11:42:33.467-06:00  INFO 23132 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T11:42:33.517-06:00  INFO 23132 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
-2025-05-24T11:42:33.915-06:00  INFO 23132 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T11:42:33.926-06:00  INFO 23132 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T11:42:33.926-06:00  INFO 23132 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T11:42:33.975-06:00  INFO 23132 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T11:42:33.975-06:00  INFO 23132 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1293 ms
-2025-05-24T11:42:34.092-06:00  INFO 23132 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T11:42:34.188-06:00  INFO 23132 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T11:42:34.235-06:00  INFO 23132 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T11:42:34.563-06:00  INFO 23132 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T11:42:34.586-06:00  INFO 23132 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T11:42:34.730-06:00  INFO 23132 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ff66917
-2025-05-24T11:42:34.731-06:00  INFO 23132 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T11:42:34.776-06:00  WARN 23132 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T11:42:34.801-06:00  INFO 23132 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T07:50:23.623-06:00  INFO 6960 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 21.0.5 with PID 6960 (C:\Users\ameri\backend\chatbot\target\classes started by ameri in C:\Users\ameri\backend\chatbot)
+2025-06-11T07:50:23.626-06:00  INFO 6960 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:50:24.304-06:00  INFO 6960 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:50:24.373-06:00  INFO 6960 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-06-11T07:50:24.805-06:00  INFO 6960 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:50:24.815-06:00  INFO 6960 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:50:24.816-06:00  INFO 6960 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T07:50:24.854-06:00  INFO 6960 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:50:24.854-06:00  INFO 6960 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1185 ms
+2025-06-11T07:50:24.946-06:00  INFO 6960 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:50:24.995-06:00  INFO 6960 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-11T07:50:25.048-06:00  INFO 6960 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:50:25.299-06:00  INFO 6960 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:50:25.326-06:00  INFO 6960 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:50:25.484-06:00  INFO 6960 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35becbd4
+2025-06-11T07:50:25.485-06:00  INFO 6960 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:50:25.556-06:00  WARN 6960 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:50:25.572-06:00  INFO 6960 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -23,185 +23,39 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-24T11:42:35.628-06:00  INFO 23132 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T11:42:35.687-06:00  INFO 23132 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T11:42:36.051-06:00  WARN 23132 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T11:42:36.065-06:00  INFO 23132 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T11:42:36.472-06:00  INFO 23132 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T11:42:36.478-06:00  INFO 23132 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 4.37 seconds (process running for 10.853)
-2025-05-24T12:05:47.502-06:00  WARN 23132 --- [chatbot] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m42s546ms472µs200ns).
-2025-05-24T12:07:17.968-06:00  INFO 23132 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T12:07:17.970-06:00  INFO 23132 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T12:07:18.018-06:00  INFO 23132 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 46 ms
-2025-05-24T12:54:10.324-06:00  WARN 23132 --- [chatbot] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m51s978ms424µs500ns).
-2025-05-24T13:28:29.335-06:00  WARN 23132 --- [chatbot] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m18s564ms747µs500ns).
-2025-05-24T13:54:21.863-06:00  WARN 23132 --- [chatbot] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m52s358ms613µs200ns).
-2025-05-24T14:36:01.631-06:00 ERROR 23132 --- [chatbot] [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-05-23T16:50:13Z. Current time: 2025-05-24T20:36:01Z, a difference of 99948369 milliseconds.  Allowed clock skew: 0 milliseconds.
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at ibt.unam.mx.security.JWTUtil.extractAllClaims(JWTUtil.java:59) ~[classes/:na]
-	at ibt.unam.mx.security.JWTUtil.extractUsername(JWTUtil.java:64) ~[classes/:na]
-	at ibt.unam.mx.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:50) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-05-24T14:36:03.510-06:00  WARN 23132 --- [chatbot] [http-nio-8080-exec-10] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [336] milliseconds.
-2025-05-24T14:36:11.872-06:00 ERROR 23132 --- [chatbot] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-05-23T16:50:13Z. Current time: 2025-05-24T20:36:11Z, a difference of 99958871 milliseconds.  Allowed clock skew: 0 milliseconds.
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at ibt.unam.mx.security.JWTUtil.extractAllClaims(JWTUtil.java:59) ~[classes/:na]
-	at ibt.unam.mx.security.JWTUtil.extractUsername(JWTUtil.java:64) ~[classes/:na]
-	at ibt.unam.mx.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:50) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.5.jar:6.4.5]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.6.jar:6.2.6]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.40.jar:10.1.40]
-	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
-
-2025-05-24T14:39:36.989-06:00  INFO 23132 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T14:39:37.109-06:00  INFO 23132 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T14:39:37.246-06:00  INFO 23132 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T14:39:37.332-06:00  INFO 23132 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T14:39:37.359-06:00  INFO 23132 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T14:41:23.782-06:00  INFO 22300 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 22300 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T14:41:23.785-06:00  INFO 22300 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T14:41:24.770-06:00  INFO 22300 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T14:41:24.822-06:00  INFO 22300 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
-2025-05-24T14:41:25.304-06:00  INFO 22300 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T14:41:25.317-06:00  INFO 22300 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T14:41:25.318-06:00  INFO 22300 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T14:41:25.371-06:00  INFO 22300 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T14:41:25.372-06:00  INFO 22300 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1517 ms
-2025-05-24T14:41:25.483-06:00  INFO 22300 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T14:41:25.571-06:00  INFO 22300 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T14:41:25.625-06:00  INFO 22300 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T14:41:25.889-06:00  INFO 22300 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T14:41:25.913-06:00  INFO 22300 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T14:41:26.077-06:00  INFO 22300 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@362a561e
-2025-05-24T14:41:26.078-06:00  INFO 22300 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T14:41:26.130-06:00  WARN 22300 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T14:41:26.148-06:00  INFO 22300 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T07:50:26.398-06:00  INFO 6960 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:50:26.461-06:00  INFO 6960 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:50:26.687-06:00  INFO 6960 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T07:50:27.114-06:00  WARN 6960 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T07:50:27.130-06:00  INFO 6960 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-11T07:50:27.530-06:00  INFO 6960 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:50:27.536-06:00  INFO 6960 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 4.358 seconds (process running for 5.976)
+2025-06-11T07:50:33.810-06:00  INFO 6960 --- [chatbot] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:50:33.810-06:00  INFO 6960 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:50:33.811-06:00  INFO 6960 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-11T07:58:57.265-06:00  INFO 6960 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T07:58:57.395-06:00  INFO 6960 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T07:58:57.485-06:00  INFO 6960 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:58:57.571-06:00  INFO 6960 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T07:58:57.631-06:00  INFO 6960 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T07:59:05.471-06:00  INFO 7240 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 21.0.5 with PID 7240 (C:\Users\ameri\backend\chatbot\target\classes started by ameri in C:\Users\ameri\backend\chatbot)
+2025-06-11T07:59:05.475-06:00  INFO 7240 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T07:59:06.674-06:00  INFO 7240 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T07:59:06.762-06:00  INFO 7240 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+2025-06-11T07:59:07.405-06:00  INFO 7240 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T07:59:07.424-06:00  INFO 7240 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T07:59:07.424-06:00  INFO 7240 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T07:59:07.479-06:00  INFO 7240 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T07:59:07.480-06:00  INFO 7240 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1903 ms
+2025-06-11T07:59:07.623-06:00  INFO 7240 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T07:59:07.705-06:00  INFO 7240 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-11T07:59:07.743-06:00  INFO 7240 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T07:59:08.043-06:00  INFO 7240 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T07:59:08.085-06:00  INFO 7240 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T07:59:08.327-06:00  INFO 7240 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@352e5a82
+2025-06-11T07:59:08.329-06:00  INFO 7240 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T07:59:08.390-06:00  WARN 7240 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T07:59:08.414-06:00  INFO 7240 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -209,39 +63,39 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-05-23T16:50:13Z. Curren
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-24T14:41:26.950-06:00  INFO 22300 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T14:41:27.025-06:00  INFO 22300 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T14:41:27.271-06:00  INFO 22300 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T14:41:27.728-06:00  WARN 22300 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T14:41:27.745-06:00  INFO 22300 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T14:41:28.178-06:00  INFO 22300 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T14:41:28.184-06:00  INFO 22300 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 4.95 seconds (process running for 6.637)
-2025-05-24T14:41:42.228-06:00  INFO 22300 --- [chatbot] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T14:41:42.229-06:00  INFO 22300 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T14:41:42.230-06:00  INFO 22300 --- [chatbot] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-24T15:09:15.912-06:00  INFO 22300 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T15:09:16.016-06:00  INFO 22300 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T15:09:16.130-06:00  INFO 22300 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:09:16.219-06:00  INFO 22300 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T15:09:16.260-06:00  INFO 22300 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T15:09:40.735-06:00  INFO 15020 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 15020 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T15:09:40.737-06:00  INFO 15020 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T15:09:41.312-06:00  INFO 15020 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T15:09:41.358-06:00  INFO 15020 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
-2025-05-24T15:09:41.766-06:00  INFO 15020 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T15:09:41.778-06:00  INFO 15020 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T15:09:41.779-06:00  INFO 15020 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T15:09:41.834-06:00  INFO 15020 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T15:09:41.834-06:00  INFO 15020 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1053 ms
-2025-05-24T15:09:41.934-06:00  INFO 15020 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T15:09:41.990-06:00  INFO 15020 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T15:09:42.026-06:00  INFO 15020 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T15:09:42.270-06:00  INFO 15020 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T15:09:42.295-06:00  INFO 15020 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T15:09:42.480-06:00  INFO 15020 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ce655b9
-2025-05-24T15:09:42.483-06:00  INFO 15020 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T15:09:42.550-06:00  WARN 15020 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T15:09:42.569-06:00  INFO 15020 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T07:59:09.527-06:00  INFO 7240 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T07:59:09.636-06:00  INFO 7240 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T07:59:10.047-06:00  INFO 7240 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T07:59:10.766-06:00  WARN 7240 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T07:59:10.796-06:00  INFO 7240 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-11T07:59:11.380-06:00  INFO 7240 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T07:59:11.387-06:00  INFO 7240 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 6.717 seconds (process running for 7.883)
+2025-06-11T07:59:35.259-06:00  INFO 7240 --- [chatbot] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T07:59:35.260-06:00  INFO 7240 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T07:59:35.263-06:00  INFO 7240 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-11T08:11:02.199-06:00  INFO 7240 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T08:11:02.229-06:00  INFO 7240 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T08:11:02.284-06:00  INFO 7240 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:11:02.349-06:00  INFO 7240 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T08:11:02.369-06:00  INFO 7240 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T08:11:09.448-06:00  INFO 6228 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 21.0.5 with PID 6228 (C:\Users\ameri\backend\chatbot\target\classes started by ameri in C:\Users\ameri\backend\chatbot)
+2025-06-11T08:11:09.451-06:00  INFO 6228 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:11:10.439-06:00  INFO 6228 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:11:10.499-06:00  INFO 6228 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-06-11T08:11:10.974-06:00  INFO 6228 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T08:11:10.986-06:00  INFO 6228 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:11:10.987-06:00  INFO 6228 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T08:11:11.050-06:00  INFO 6228 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:11:11.050-06:00  INFO 6228 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1531 ms
+2025-06-11T08:11:11.202-06:00  INFO 6228 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:11:11.283-06:00  INFO 6228 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-11T08:11:11.321-06:00  INFO 6228 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:11:11.589-06:00  INFO 6228 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:11:11.617-06:00  INFO 6228 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:11:11.789-06:00  INFO 6228 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5df2023c
+2025-06-11T08:11:11.790-06:00  INFO 6228 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:11:11.851-06:00  WARN 6228 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:11:11.876-06:00  INFO 6228 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -249,39 +103,39 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-05-23T16:50:13Z. Curren
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-24T15:09:43.586-06:00  INFO 15020 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T15:09:43.676-06:00  INFO 15020 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:09:43.944-06:00  INFO 15020 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T15:09:44.521-06:00  WARN 15020 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T15:09:44.543-06:00  INFO 15020 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T15:09:45.169-06:00  INFO 15020 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T15:09:45.177-06:00  INFO 15020 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 4.938 seconds (process running for 5.962)
-2025-05-24T15:09:45.266-06:00  INFO 15020 --- [chatbot] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T15:09:45.266-06:00  INFO 15020 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T15:09:45.267-06:00  INFO 15020 --- [chatbot] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-24T15:12:54.976-06:00  INFO 15020 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T15:12:55.003-06:00  INFO 15020 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T15:12:55.025-06:00  INFO 15020 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:12:55.043-06:00  INFO 15020 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T15:12:55.056-06:00  INFO 15020 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T15:13:27.876-06:00  INFO 24196 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 24196 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T15:13:27.880-06:00  INFO 24196 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T15:13:29.896-06:00  INFO 24196 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T15:13:30.031-06:00  INFO 24196 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interface.
-2025-05-24T15:13:31.133-06:00  INFO 24196 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T15:13:31.174-06:00  INFO 24196 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T15:13:31.174-06:00  INFO 24196 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T15:13:31.324-06:00  INFO 24196 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T15:13:31.325-06:00  INFO 24196 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3356 ms
-2025-05-24T15:13:31.753-06:00  INFO 24196 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T15:13:31.928-06:00  INFO 24196 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T15:13:32.021-06:00  INFO 24196 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T15:13:32.629-06:00  INFO 24196 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T15:13:32.695-06:00  INFO 24196 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T15:13:33.019-06:00  INFO 24196 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67e77f52
-2025-05-24T15:13:33.021-06:00  INFO 24196 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T15:13:33.099-06:00  WARN 24196 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T15:13:33.127-06:00  INFO 24196 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T08:11:12.986-06:00  INFO 6228 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:11:13.065-06:00  INFO 6228 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:11:13.444-06:00  INFO 6228 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T08:11:14.058-06:00  WARN 6228 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T08:11:14.081-06:00  INFO 6228 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-11T08:11:14.670-06:00  INFO 6228 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T08:11:14.678-06:00  INFO 6228 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 6.055 seconds (process running for 7.61)
+2025-06-11T08:11:30.072-06:00  INFO 6228 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:11:30.073-06:00  INFO 6228 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:11:30.075-06:00  INFO 6228 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T08:22:43.544-06:00  INFO 6228 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T08:22:43.618-06:00  INFO 6228 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T08:22:43.675-06:00  INFO 6228 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:22:43.716-06:00  INFO 6228 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T08:22:43.738-06:00  INFO 6228 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T08:22:48.087-06:00  INFO 13284 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 21.0.5 with PID 13284 (C:\Users\ameri\backend\chatbot\target\classes started by ameri in C:\Users\ameri\backend\chatbot)
+2025-06-11T08:22:48.088-06:00  INFO 13284 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T08:22:48.706-06:00  INFO 13284 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T08:22:48.749-06:00  INFO 13284 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2025-06-11T08:22:49.172-06:00  INFO 13284 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T08:22:49.183-06:00  INFO 13284 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T08:22:49.183-06:00  INFO 13284 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T08:22:49.220-06:00  INFO 13284 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T08:22:49.220-06:00  INFO 13284 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1079 ms
+2025-06-11T08:22:49.312-06:00  INFO 13284 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T08:22:49.357-06:00  INFO 13284 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-11T08:22:49.387-06:00  INFO 13284 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T08:22:49.617-06:00  INFO 13284 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T08:22:49.639-06:00  INFO 13284 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T08:22:49.769-06:00  INFO 13284 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6eaa6b0c
+2025-06-11T08:22:49.769-06:00  INFO 13284 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T08:22:49.798-06:00  WARN 13284 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T08:22:49.810-06:00  INFO 13284 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -289,39 +143,39 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-05-23T16:50:13Z. Curren
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-24T15:13:35.149-06:00  INFO 24196 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T15:13:35.313-06:00  INFO 24196 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:13:35.865-06:00  INFO 24196 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T15:13:37.343-06:00  WARN 24196 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T15:13:37.389-06:00  INFO 24196 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T15:13:38.367-06:00  INFO 24196 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T15:13:38.385-06:00  INFO 24196 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 11.789 seconds (process running for 13.928)
-2025-05-24T15:13:46.057-06:00  INFO 24196 --- [chatbot] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T15:13:46.058-06:00  INFO 24196 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T15:13:46.059-06:00  INFO 24196 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-24T15:16:33.541-06:00  INFO 24196 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T15:16:33.760-06:00  INFO 24196 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T15:16:34.081-06:00  INFO 24196 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:16:34.252-06:00  INFO 24196 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T15:16:34.383-06:00  INFO 24196 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T15:16:51.002-06:00  INFO 23872 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 23872 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T15:16:51.007-06:00  INFO 23872 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T15:16:52.319-06:00  INFO 23872 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T15:16:52.400-06:00  INFO 23872 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
-2025-05-24T15:16:52.942-06:00  INFO 23872 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T15:16:52.957-06:00  INFO 23872 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T15:16:52.957-06:00  INFO 23872 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T15:16:53.011-06:00  INFO 23872 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T15:16:53.012-06:00  INFO 23872 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1881 ms
-2025-05-24T15:16:53.140-06:00  INFO 23872 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T15:16:53.223-06:00  INFO 23872 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T15:16:53.261-06:00  INFO 23872 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T15:16:53.557-06:00  INFO 23872 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T15:16:53.587-06:00  INFO 23872 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T15:16:53.774-06:00  INFO 23872 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cf0673d
-2025-05-24T15:16:53.776-06:00  INFO 23872 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T15:16:53.836-06:00  WARN 23872 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T15:16:53.858-06:00  INFO 23872 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-11T08:22:50.480-06:00  INFO 13284 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T08:22:50.551-06:00  INFO 13284 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T08:22:50.770-06:00  INFO 13284 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T08:22:51.160-06:00  WARN 13284 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T08:22:51.174-06:00  INFO 13284 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-11T08:22:51.531-06:00  INFO 13284 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T08:22:51.537-06:00  INFO 13284 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 3.843 seconds (process running for 4.51)
+2025-06-11T08:23:05.318-06:00  INFO 13284 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T08:23:05.319-06:00  INFO 13284 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T08:23:05.321-06:00  INFO 13284 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T09:38:23.117-06:00  INFO 13284 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T09:38:23.651-06:00  INFO 13284 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T09:38:24.944-06:00  INFO 13284 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:38:25.480-06:00  INFO 13284 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T09:38:25.690-06:00  INFO 13284 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T09:38:35.520-06:00  INFO 20356 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 21.0.5 with PID 20356 (C:\Users\ameri\backend\chatbot\target\classes started by ameri in C:\Users\ameri\backend\chatbot)
+2025-06-11T09:38:35.524-06:00  INFO 20356 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T09:38:36.627-06:00  INFO 20356 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T09:38:36.697-06:00  INFO 20356 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-06-11T09:38:37.176-06:00  INFO 20356 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T09:38:37.189-06:00  INFO 20356 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T09:38:37.190-06:00  INFO 20356 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T09:38:37.231-06:00  INFO 20356 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T09:38:37.232-06:00  INFO 20356 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1616 ms
+2025-06-11T09:38:37.328-06:00  INFO 20356 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T09:38:37.402-06:00  INFO 20356 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-11T09:38:37.445-06:00  INFO 20356 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T09:38:37.713-06:00  INFO 20356 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T09:38:37.743-06:00  INFO 20356 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T09:38:37.902-06:00  INFO 20356 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30358dc7
+2025-06-11T09:38:37.903-06:00  INFO 20356 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T09:38:37.964-06:00  WARN 20356 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T09:38:37.981-06:00  INFO 20356 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -329,191 +183,13 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-05-23T16:50:13Z. Curren
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-24T15:16:54.806-06:00  INFO 23872 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T15:16:54.874-06:00  INFO 23872 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:16:55.180-06:00  INFO 23872 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T15:16:55.710-06:00  WARN 23872 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T15:16:55.730-06:00  INFO 23872 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T15:16:56.604-06:00  INFO 23872 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T15:16:56.619-06:00  INFO 23872 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 6.848 seconds (process running for 8.599)
-2025-05-24T15:17:02.160-06:00  INFO 23872 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T15:17:02.161-06:00  INFO 23872 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T15:17:02.164-06:00  INFO 23872 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-05-24T15:17:39.098-06:00  INFO 23872 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T15:17:39.120-06:00  INFO 23872 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T15:17:39.138-06:00  INFO 23872 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:17:39.151-06:00  INFO 23872 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T15:17:39.163-06:00  INFO 23872 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T15:18:07.125-06:00  INFO 20784 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 20784 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T15:18:07.130-06:00  INFO 20784 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T15:18:08.195-06:00  INFO 20784 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T15:18:08.276-06:00  INFO 20784 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
-2025-05-24T15:18:08.874-06:00  INFO 20784 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T15:18:08.891-06:00  INFO 20784 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T15:18:08.891-06:00  INFO 20784 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T15:18:08.963-06:00  INFO 20784 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T15:18:08.963-06:00  INFO 20784 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1734 ms
-2025-05-24T15:18:09.110-06:00  INFO 20784 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T15:18:09.205-06:00  INFO 20784 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T15:18:09.255-06:00  INFO 20784 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T15:18:09.612-06:00  INFO 20784 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T15:18:09.644-06:00  INFO 20784 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T15:18:09.881-06:00  INFO 20784 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ad0bb4e
-2025-05-24T15:18:09.882-06:00  INFO 20784 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T15:18:09.931-06:00  WARN 20784 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T15:18:09.948-06:00  INFO 20784 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-24T15:18:11.038-06:00  INFO 20784 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T15:18:11.125-06:00  INFO 20784 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T15:18:11.427-06:00  INFO 20784 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T15:18:11.968-06:00  WARN 20784 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T15:18:11.987-06:00  INFO 20784 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T15:18:12.455-06:00  INFO 20784 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T15:18:12.461-06:00  INFO 20784 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 6.203 seconds (process running for 7.822)
-2025-05-24T15:18:39.512-06:00  INFO 20784 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T15:18:39.513-06:00  INFO 20784 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T15:18:39.514-06:00  INFO 20784 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-24T17:38:43.453-06:00  WARN 20784 --- [chatbot] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m33s278ms948µs800ns).
-2025-05-24T17:47:54.687-06:00  INFO 20784 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T17:47:54.751-06:00  INFO 20784 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T17:47:54.845-06:00  INFO 20784 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T17:47:54.934-06:00  INFO 20784 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T17:47:55.001-06:00  INFO 20784 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T17:49:59.828-06:00  INFO 24508 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 24508 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T17:49:59.832-06:00  INFO 24508 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T17:50:00.540-06:00  INFO 24508 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T17:50:00.584-06:00  INFO 24508 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
-2025-05-24T17:50:01.056-06:00  INFO 24508 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T17:50:01.070-06:00  INFO 24508 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T17:50:01.070-06:00  INFO 24508 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T17:50:01.123-06:00  INFO 24508 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T17:50:01.123-06:00  INFO 24508 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1190 ms
-2025-05-24T17:50:01.214-06:00  INFO 24508 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T17:50:01.265-06:00  INFO 24508 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T17:50:01.306-06:00  INFO 24508 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T17:50:01.539-06:00  INFO 24508 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T17:50:01.563-06:00  INFO 24508 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T17:50:01.717-06:00  INFO 24508 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@919086
-2025-05-24T17:50:01.718-06:00  INFO 24508 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T17:50:01.774-06:00  WARN 24508 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T17:50:01.791-06:00  INFO 24508 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-24T17:50:02.496-06:00  INFO 24508 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T17:50:02.566-06:00  INFO 24508 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T17:50:02.793-06:00  INFO 24508 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T17:50:03.227-06:00  WARN 24508 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T17:50:03.244-06:00  INFO 24508 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T17:50:03.624-06:00  INFO 24508 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T17:50:03.629-06:00  INFO 24508 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 4.429 seconds (process running for 5.297)
-2025-05-24T17:52:00.056-06:00  INFO 24508 --- [chatbot] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T17:52:00.061-06:00  INFO 24508 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T17:52:00.083-06:00  INFO 24508 --- [chatbot] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
-2025-05-24T18:11:53.205-06:00  INFO 24508 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T18:11:53.271-06:00  INFO 24508 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T18:11:53.333-06:00  INFO 24508 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T18:11:53.385-06:00  INFO 24508 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T18:11:53.406-06:00  INFO 24508 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T18:12:00.450-06:00  INFO 14580 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 14580 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T18:12:00.452-06:00  INFO 14580 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T18:12:01.855-06:00  INFO 14580 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T18:12:01.973-06:00  INFO 14580 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
-2025-05-24T18:12:02.756-06:00  INFO 14580 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T18:12:02.781-06:00  INFO 14580 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T18:12:02.781-06:00  INFO 14580 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T18:12:02.894-06:00  INFO 14580 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T18:12:02.895-06:00  INFO 14580 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2364 ms
-2025-05-24T18:12:03.103-06:00  INFO 14580 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T18:12:03.177-06:00  INFO 14580 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T18:12:03.218-06:00  INFO 14580 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T18:12:03.540-06:00  INFO 14580 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T18:12:03.568-06:00  INFO 14580 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T18:12:03.791-06:00  INFO 14580 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cf0673d
-2025-05-24T18:12:03.793-06:00  INFO 14580 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T18:12:03.848-06:00  WARN 14580 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T18:12:03.864-06:00  INFO 14580 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-24T18:12:04.809-06:00  INFO 14580 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T18:12:04.902-06:00  INFO 14580 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T18:12:05.236-06:00  INFO 14580 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T18:12:05.873-06:00  WARN 14580 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T18:12:05.892-06:00  INFO 14580 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T18:12:06.344-06:00  INFO 14580 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T18:12:06.350-06:00  INFO 14580 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 6.719 seconds (process running for 7.717)
-2025-05-24T18:12:28.570-06:00  INFO 14580 --- [chatbot] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T18:12:28.571-06:00  INFO 14580 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T18:12:28.573-06:00  INFO 14580 --- [chatbot] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-05-24T18:13:57.804-06:00  WARN 14580 --- [chatbot] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
-2025-05-24T18:16:19.746-06:00  INFO 14580 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T18:16:19.764-06:00  INFO 14580 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T18:16:19.785-06:00  INFO 14580 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T18:16:19.818-06:00  INFO 14580 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T18:16:19.837-06:00  INFO 14580 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-24T18:16:26.407-06:00  INFO 17736 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Starting ChatbotApplication using Java 24 with PID 17736 (C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot\target\classes started by ameri in C:\Users\ameri\OneDrive\Escritorio\Proyecto Estadias\backend\chatbot)
-2025-05-24T18:16:26.410-06:00  INFO 17736 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-05-24T18:16:27.445-06:00  INFO 17736 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-24T18:16:27.527-06:00  INFO 17736 --- [chatbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
-2025-05-24T18:16:28.049-06:00  INFO 17736 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-24T18:16:28.062-06:00  INFO 17736 --- [chatbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-24T18:16:28.062-06:00  INFO 17736 --- [chatbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-24T18:16:28.128-06:00  INFO 17736 --- [chatbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-24T18:16:28.128-06:00  INFO 17736 --- [chatbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1657 ms
-2025-05-24T18:16:28.243-06:00  INFO 17736 --- [chatbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-24T18:16:28.316-06:00  INFO 17736 --- [chatbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-24T18:16:28.357-06:00  INFO 17736 --- [chatbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-24T18:16:28.618-06:00  INFO 17736 --- [chatbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-24T18:16:28.645-06:00  INFO 17736 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-24T18:16:28.802-06:00  INFO 17736 --- [chatbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5408d4b3
-2025-05-24T18:16:28.803-06:00  INFO 17736 --- [chatbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-24T18:16:28.851-06:00  WARN 17736 --- [chatbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-24T18:16:28.869-06:00  INFO 17736 --- [chatbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-24T18:16:29.670-06:00  INFO 17736 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-24T18:16:29.728-06:00  INFO 17736 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T18:16:29.962-06:00  INFO 17736 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-24T18:16:30.463-06:00  WARN 17736 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-24T18:16:30.481-06:00  INFO 17736 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2025-05-24T18:16:30.988-06:00  INFO 17736 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-24T18:16:30.997-06:00  INFO 17736 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 5.344 seconds (process running for 6.27)
-2025-05-24T18:16:39.817-06:00  INFO 17736 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-24T18:16:39.818-06:00  INFO 17736 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-24T18:16:39.819-06:00  INFO 17736 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-24T18:43:22.265-06:00  WARN 17736 --- [chatbot] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m53s82ms676µs800ns).
-2025-05-24T19:09:34.298-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:10:27.052-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:11:54.521-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:12:16.887-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-9] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [224] milliseconds.
-2025-05-24T19:15:59.068-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:17:01.874-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:18:50.857-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:19:17.460-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:20:31.968-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T19:24:04.233-06:00  WARN 17736 --- [chatbot] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Long` from Object value (token `JsonToken.START_OBJECT`)]
-2025-05-24T20:33:35.269-06:00  INFO 17736 --- [chatbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-24T20:33:35.409-06:00  INFO 17736 --- [chatbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-24T20:33:35.536-06:00  INFO 17736 --- [chatbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-24T20:33:35.646-06:00  INFO 17736 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-24T20:33:35.686-06:00  INFO 17736 --- [chatbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T09:38:38.777-06:00  INFO 20356 --- [chatbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T09:38:38.857-06:00  INFO 20356 --- [chatbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:38:39.158-06:00  INFO 20356 --- [chatbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T09:38:39.612-06:00  WARN 20356 --- [chatbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T09:38:39.633-06:00  INFO 20356 --- [chatbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-11T09:38:40.057-06:00  INFO 20356 --- [chatbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T09:38:40.064-06:00  INFO 20356 --- [chatbot] [main] ibt.unam.mx.ChatbotApplication           : Started ChatbotApplication in 5.412 seconds (process running for 6.483)
+2025-06-11T09:41:42.603-06:00  INFO 20356 --- [chatbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T09:41:42.618-06:00  INFO 20356 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T09:41:42.665-06:00  INFO 20356 --- [chatbot] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 47 ms
