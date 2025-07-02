@@ -21,12 +21,13 @@ import java.util.Map;
 public class N8nService {
 
     @Transactional(readOnly = true)
-    public ResponseEntity<Message> getApi(String message) {
+    public ResponseEntity<Message> getApi(String message, String sessionId) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://10.0.6.208:5678/webhook/message";
+        String url = "http://132.248.32.197:5678/webhook/message";
 
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("chatInput", message);
+        requestBody.put("sessionId", sessionId);
 
         try {
             N8nResponseDto response = restTemplate.postForObject(url, requestBody, N8nResponseDto.class);
@@ -54,7 +55,7 @@ public class N8nService {
 
     public ResponseEntity<Message> sendFile(MultipartFile file) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://10.0.6.208:5678/webhook-test/file";
+        String url = "http://132.248.32.197:5678/webhook/file";
 
         try{
             HttpHeaders headers = new HttpHeaders();

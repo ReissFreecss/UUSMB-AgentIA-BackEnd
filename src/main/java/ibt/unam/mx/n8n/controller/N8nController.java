@@ -25,7 +25,8 @@ public class N8nController {
     @PreAuthorize("hasAnyAuthority('ADMIN', 'INTERNO', 'EXTERNO')")
     public ResponseEntity<Message> getApi(@RequestBody ChatInputDTO request) {
         String userMessage = request.getChatInput();
-        return n8nService.getApi(userMessage);
+        String userSessionId = request.getSessionId();
+        return n8nService.getApi(userMessage, userSessionId);
     }
 
     @PostMapping("/file")

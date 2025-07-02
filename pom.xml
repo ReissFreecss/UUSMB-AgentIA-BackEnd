@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>chatbot</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<name>chatbot</name>
 	<description>Project about chatbot, the principal bridge between ui and n8n</description>
 	<url/>
