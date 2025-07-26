@@ -1,8 +1,10 @@
 package ibt.unam.mx.user.service;
 
+import ibt.unam.mx.email.EmailService;
 import ibt.unam.mx.resource.Role;
 import ibt.unam.mx.user.model.AppUser;
 import ibt.unam.mx.user.model.ChangePasswordDTO;
+import ibt.unam.mx.user.model.RecoveryDTO;
 import ibt.unam.mx.user.model.UserDTO;
 import ibt.unam.mx.user.repository.AppUserRepository;
 import ibt.unam.mx.utils.Message;
@@ -14,21 +16,24 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 
 @Service
 @Transactional
 public class UserService {
 
+    private final EmailService emailService;
     private final AppUserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
-    // private final EmailService emailService;
 
     @Autowired
-    public UserService(AppUserRepository appUserRepository, PasswordEncoder passwordEncoder) {
+    public UserService(AppUserRepository appUserRepository, PasswordEncoder passwordEncoder, EmailService emailService) {
         this.userRepository = appUserRepository;
         this.passwordEncoder = passwordEncoder;
+        this.emailService = emailService;
     }
 
     //Obtener todos los usuarios
@@ -118,21 +123,130 @@ public class UserService {
         return new ResponseEntity<>(new Message(user, "Usuario actualizado con éxito.", TypesResponse.SUCCESS), HttpStatus.OK);
     }
 
-    // Cambair contrasena sin (olvido de contrasena)
+    //Enviar codigo de recuperacion
     @Transactional(rollbackFor = Exception.class)
-    public ResponseEntity<Message> changePassword(ChangePasswordDTO dto) {
-        Optional<AppUser> optionalUser = userRepository.findById(dto.getUserId());
+    public ResponseEntity<Message> sendCode(String email) {
+        Optional<AppUser> optionalUser = userRepository.findByEmail(email);
         if (!optionalUser.isPresent()) {
             return new ResponseEntity<>(new Message("Usuario no encontrado.", TypesResponse.ERROR), HttpStatus.BAD_REQUEST);
         }
-        if  (dto.getNewPassword().length() < 8 || dto.getNewPassword().length() > 255) {
-            return new ResponseEntity<>(new Message("La contraseña debe tener entre 8 y 255 caracteres.", TypesResponse.WARNING), HttpStatus.BAD_REQUEST);
-        }
+
         AppUser user = optionalUser.get();
-        user.setPassword(passwordEncoder.encode(dto.getNewPassword()));
+        String code = String.format("%06d", new Random().nextInt(100000));
+        user.setRecoveryCode(code);
+        user.setCodeExpiration(LocalDateTime.now().plusMinutes(10));
 
         userRepository.save(user);
-        return new ResponseEntity<>(new Message("Contraseña actualizada con éxito.", TypesResponse.SUCCESS), HttpStatus.OK);
+        String mensajeHtml = "<!DOCTYPE html>\n" +
+                "<html lang=\"es\">\n" +
+                "<head>\n" +
+                "  <meta charset=\"UTF-8\" />\n" +
+                "  <title>Recuperación de Contraseña</title>\n" +
+                "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n" +
+                "</head>\n" +
+                "<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f6f6f6;\">\n" +
+                "  <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\n" +
+                "    <tr>\n" +
+                "      <td style=\"padding: 20px 0;\">\n" +
+                "        <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"600\" style=\"background-color: #ffffff; border-radius: 6px;\">\n" +
+                "          <!-- Encabezado -->\n" +
+                "          <tr>\n" +
+                "            <td align=\"center\" style=\"padding: 20px;\">\n" +
+                "              <h1 style=\"color: #2A004E; margin-bottom: 0; font-size: 28px;\">\n" +
+                "                Recuperación de Contraseña\n" +
+                "              </h1>\n" +
+                "            </td>\n" +
+                "          </tr>\n" +
+                "          <!-- Contenido principal -->\n" +
+                "          <tr>\n" +
+                "            <td style=\"padding: 20px; color: #333333; font-size: 16px; line-height: 1.5;\">\n" +
+                "              <p style=\"margin-top: 0;\">\n" +
+                "                ¡Hola <strong>{{nombreUsuario}}</strong>!\n" +
+                "              </p>\n" +
+                "              <p>\n" +
+                "                Recibimos una solicitud para restablecer la contraseña de tu cuenta. Tu código de\n" +
+                "                recuperación es:\n" +
+                "              </p>\n" +
+                "              <div style=\"text-align: center; margin: 30px 0;\">\n" +
+                "                <span style=\"font-size: 24px; font-weight: bold; color: #2A004E;\">\n" +
+                "                  {{codigo}}\n" +
+                "                </span>\n" +
+                "              </div>\n" +
+                "              <p>\n" +
+                "                Este código expirará en <strong>10 minutos</strong>. Si no realizaste esta solicitud, simplemente\n" +
+                "                ignora este correo.\n" +
+                "              </p>\n" +
+                "              <p style=\"margin-bottom: 0;\">\n" +
+                "              </p>\n" +
+                "            </td>\n" +
+                "          </tr>\n" +
+                "          <!-- Pie de página -->\n" +
+                "          <tr>\n" +
+                "            <td align=\"center\" style=\"background-color: #f6f6f6; padding: 10px; border-radius: 0 0 6px 6px;\">\n" +
+                "              <p style=\"color: #888888; font-size: 14px; margin: 0;\">\n" +
+                "                © 2025 UUSMB. Todos los derechos reservados.\n" +
+                "              </p>\n" +
+                "            </td>\n" +
+                "          </tr>\n" +
+                "        </table>\n" +
+                "      </td>\n" +
+                "    </tr>\n" +
+                "  </table>\n" +
+                "</body>\n" +
+                "</html>\n";
+
+        String finalHtml = mensajeHtml
+                .replace("{{nombreUsuario}}", user.getFullName())
+                .replace("{{codigo}}", code);
+
+        boolean enviado = emailService.sendEmail(
+                user.getEmail(),
+                "Recuperación de contraseña",
+                finalHtml
+        );
+
+        if (enviado) {
+            return new ResponseEntity<>(new Message("Código de recuperación enviado con éxito.", TypesResponse.SUCCESS), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(new Message("Error al enviar el código de recuperación.", TypesResponse.ERROR), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    // Verificar código de recuperación
+    @Transactional(readOnly = true)
+    public ResponseEntity<Message> verifyRecoveryCode(RecoveryDTO dto) {
+        Optional<AppUser> optionalUser = userRepository.findFirstByRecoveryCode(dto.getRecoveryCode());
+        if (!optionalUser.isPresent()) {
+            return new ResponseEntity<>(new Message("El código de recuperación es inválido o ha expirado.", TypesResponse.WARNING), HttpStatus.BAD_REQUEST);
+        }
+
+        AppUser user = optionalUser.get();
+        if (user.getCodeExpiration().isBefore(LocalDateTime.now())) {
+            return new ResponseEntity<>(new Message("El código de recuperación ha expirado.", TypesResponse.WARNING), HttpStatus.BAD_REQUEST);
+        }
+
+        return new ResponseEntity<>(new Message("Código de recuperación verificado con éxito.", TypesResponse.SUCCESS), HttpStatus.OK);
+    }
+
+    //Cambiar contra despues de verficacion de codigo
+    @Transactional(rollbackFor = Exception.class)
+    public ResponseEntity<Message> resetPassword(String email, String newPassword) {
+        Optional<AppUser> optionalUser = userRepository.findByEmail(email);
+        if (!optionalUser.isPresent()) {
+            return new ResponseEntity<>(new Message("Usuario no encontrado.", TypesResponse.ERROR), HttpStatus.NOT_FOUND);
+        }
+
+        AppUser user = optionalUser.get();
+        if (user.getRecoveryCode() == null || user.getCodeExpiration().isBefore(LocalDateTime.now())) {
+            return new ResponseEntity<>(new Message("El código de recuperación es inválido o ha expirado.", TypesResponse.WARNING), HttpStatus.BAD_REQUEST);
+        }
+
+        user.setPassword(passwordEncoder.encode(newPassword));
+        user.setRecoveryCode(null);
+        user.setCodeExpiration(null);
+
+        userRepository.save(user);
+        return new ResponseEntity<>(new Message("Contraseña restablecida con éxito.", TypesResponse.SUCCESS), HttpStatus.OK);
     }
 
     //Cambair contrasena desde perfil

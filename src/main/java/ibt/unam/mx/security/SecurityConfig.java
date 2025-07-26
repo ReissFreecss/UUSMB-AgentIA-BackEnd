@@ -35,6 +35,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/users/save").permitAll()
                         .requestMatchers("/auth/login").permitAll()
+                        .requestMatchers("/users/send-recovery-code/**").permitAll()
+                        .requestMatchers("/users/verify-recovery-code").permitAll()
 
                         // Cualquier otra ruta requiere autenticación
                         .anyRequest().authenticated()

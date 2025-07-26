@@ -1,14 +1,18 @@
 package ibt.unam.mx.user.controller;
 
 import ibt.unam.mx.user.model.ChangePasswordDTO;
+import ibt.unam.mx.user.model.RecoveryDTO;
 import ibt.unam.mx.user.model.UserDTO;
 import ibt.unam.mx.user.service.UserService;
 import ibt.unam.mx.utils.Message;
+import ibt.unam.mx.utils.TypesResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/users")
@@ -63,11 +67,27 @@ public class UserController {
         return userService.update(dto);
     }
 
-    //Cambiar contrasena
-    @PutMapping("/change-password")
-    @PreAuthorize("hasAnyAuthority('ADMIN', 'INTERNO', 'EXTERNO')")
-    public ResponseEntity<Message> changePassword(@Validated @RequestBody ChangePasswordDTO dto) {
-        return userService.changePassword(dto);
+    //Envio de codigo de recuperacion
+    @PostMapping("/send-recovery-code/{email}")
+    public ResponseEntity<Message> sendRecoveryCode(@PathVariable String email) {
+        return userService.sendCode(email);
+    }
+
+    //Verificar codigo
+    @PostMapping("/verify-recovery-code")
+    public ResponseEntity<Message> verifyRecoveryCode(@Validated @RequestBody RecoveryDTO dto) {
+        return userService.verifyRecoveryCode(dto);
+    }
+
+    //Reseteo de contraseña
+    @PutMapping("/reset-password")
+    public ResponseEntity<Message> resetPassword(@RequestBody Map<String, String> payload) {
+        String email = payload.get("email");
+        String newPassword = payload.get("newPassword");
+        if (email == null || newPassword == null) {
+            return ResponseEntity.badRequest().body(new Message("Missing parameters", TypesResponse.ERROR));
+        }
+        return userService.resetPassword(email, newPassword);
     }
 
     @PostMapping("/change-password-user")
