@@ -30,7 +30,7 @@ public class N8nController {
     }
 
     @PostMapping("/file")
-    @PreAuthorize("hasAnyAuthority('ADMIN', 'INTERNO', 'EXTERNO')")
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
     public ResponseEntity<Message> handleFileUpload(@RequestParam("file") MultipartFile file) {
         // Valida que el archivo no esté vacío
         if (file.isEmpty()) {
@@ -40,5 +40,47 @@ public class N8nController {
             return ResponseEntity.badRequest().body(errorMsg);
         }
         return n8nService.sendFile(file);
+    }
+
+    @PostMapping("/messageCotizar")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'INTERNO', 'EXTERNO')")
+    public ResponseEntity<Message> getApiCotizar(@RequestBody ChatInputDTO request) {
+        String userMessage = request.getChatInput();
+        String userSessionId = request.getSessionId();
+        return n8nService.getApiCotizar(userMessage, userSessionId);
+    }
+
+    @PostMapping("/fileCotizar")
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
+    public ResponseEntity<Message> handleFileUploadCotizar(@RequestParam("file") MultipartFile file) {
+        // Valida que el archivo no esté vacío
+        if (file.isEmpty()) {
+            Message errorMsg = new Message();
+            errorMsg.setText("El archivo no puede estar vacío.");
+            errorMsg.setType(TypesResponse.ERROR);
+            return ResponseEntity.badRequest().body(errorMsg);
+        }
+        return n8nService.sendFileCotizar(file);
+    }
+
+    @PostMapping("/messageSisbi")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'INTERNO', 'EXTERNO')")
+    public ResponseEntity<Message> getApiSisbi(@RequestBody ChatInputDTO request) {
+        String userMessage = request.getChatInput();
+        String userSessionId = request.getSessionId();
+        return n8nService.getApiSisbi(userMessage, userSessionId);
+    }
+
+    @PostMapping("/fileSisbi")
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
+    public ResponseEntity<Message> handleFileUploadSisbi(@RequestParam("file") MultipartFile file) {
+        // Valida que el archivo no esté vacío
+        if (file.isEmpty()) {
+            Message errorMsg = new Message();
+            errorMsg.setText("El archivo no puede estar vacío.");
+            errorMsg.setType(TypesResponse.ERROR);
+            return ResponseEntity.badRequest().body(errorMsg);
+        }
+        return n8nService.sendFileSisbi(file);
     }
 }

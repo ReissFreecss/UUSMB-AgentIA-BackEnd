@@ -33,3 +33,4 @@ build/
 .vscode/
 
 servicio_test.log
+application.properties
