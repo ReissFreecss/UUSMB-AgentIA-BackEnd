@@ -24,7 +24,7 @@ public class N8nService {
     @Transactional(readOnly = true)
     public ResponseEntity<Message> getApi(String message, String sessionId) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://132.248.32.197:5678/webhook/message";
+        String url = "https://www.pathogens.ibt.unam.mx/webhook/message";
 
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("chatInput", message);
@@ -56,7 +56,7 @@ public class N8nService {
 
     public ResponseEntity<Message> sendFile(MultipartFile file) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://132.248.32.197:5678/webhook/file";
+        String url = "https://www.pathogens.ibt.unam.mx/webhook/file";
 
         try{
             HttpHeaders headers = new HttpHeaders();
@@ -104,7 +104,7 @@ public class N8nService {
     @Transactional(readOnly = true)
     public ResponseEntity<Message> getApiCotizar(String message, String sessionId) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://132.248.32.197:5678/webhook/messageCotizacion";
+        String url = "https://www.pathogens.ibt.unam.mx/webhook/messageCotizacion";
 
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("chatInput", message);
@@ -136,7 +136,7 @@ public class N8nService {
 
     public ResponseEntity<Message> sendFileCotizar(MultipartFile file) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://132.248.32.197:5678/webhook/fileCotizacion";
+        String url = "https://www.pathogens.ibt.unam.mx/webhook/fileCotizacion";
 
         try{
             HttpHeaders headers = new HttpHeaders();
@@ -184,7 +184,7 @@ public class N8nService {
     @Transactional(readOnly = true)
     public ResponseEntity<Message> getApiSisbi(String message, String sessionId) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://132.248.32.197:5678/webhook/messageSisbi";
+        String url = "https://www.pathogens.ibt.unam.mx/webhook/messageSisbi";
 
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("chatInput", message);
@@ -216,7 +216,7 @@ public class N8nService {
 
     public ResponseEntity<Message> sendFileSisbi(MultipartFile file) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://132.248.32.197:5678/webhook/fileSisbi";
+        String url = "https://www.pathogens.ibt.unam.mx/webhook/fileSisbi";
 
         try{
             HttpHeaders headers = new HttpHeaders();

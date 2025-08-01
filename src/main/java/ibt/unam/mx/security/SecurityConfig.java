@@ -37,6 +37,7 @@ public class SecurityConfig {
                         .requestMatchers("/auth/login").permitAll()
                         .requestMatchers("/users/send-recovery-code/**").permitAll()
                         .requestMatchers("/users/verify-recovery-code").permitAll()
+                        .requestMatchers("/users/reset-password").permitAll()
 
                         // Cualquier otra ruta requiere autenticación
                         .anyRequest().authenticated()
