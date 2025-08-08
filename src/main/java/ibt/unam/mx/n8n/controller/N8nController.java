@@ -1,5 +1,6 @@
 package ibt.unam.mx.n8n.controller;
 
+import ibt.unam.mx.email.EmailDTO;
 import ibt.unam.mx.n8n.model.ChatInputDTO;
 import ibt.unam.mx.n8n.service.N8nService;
 import ibt.unam.mx.utils.Message;
@@ -27,6 +28,15 @@ public class N8nController {
         String userMessage = request.getChatInput();
         String userSessionId = request.getSessionId();
         return n8nService.getApi(userMessage, userSessionId);
+    }
+
+    @PostMapping("/email")
+    @PreAuthorize("hasAnyAuthority('ADMIN')")
+    public ResponseEntity<Message> sendEmail(@RequestBody EmailDTO request) {
+        String to = request.getTo();
+        String subject = request.getSubject();
+        String body = request.getBody();
+        return n8nService.sendEmail(to, subject, body);
     }
 
     @PostMapping("/file")

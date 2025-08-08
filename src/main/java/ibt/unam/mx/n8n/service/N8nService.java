@@ -1,5 +1,6 @@
 package ibt.unam.mx.n8n.service;
 
+import ibt.unam.mx.email.EmailDTO;
 import ibt.unam.mx.n8n.model.N8nResponseDto;
 import ibt.unam.mx.utils.Message;
 import ibt.unam.mx.utils.TypesResponse;
@@ -20,11 +21,47 @@ import java.util.Map;
 @Transactional
 public class N8nService {
 
+
+    //Email Trigger
+    @Transactional(readOnly = true)
+    public ResponseEntity<Message> sendEmail(String to, String subject, String body) {
+        RestTemplate restTemplate = new RestTemplate();
+        String url = "http://132.248.32.197:5678/webhook/gmail";
+
+        Map<String, String> requestBody = new HashMap<>();
+        requestBody.put("to", to);
+        requestBody.put("subject", subject);
+        requestBody.put("body", body);
+
+        try{
+            EmailDTO response = restTemplate.postForObject(url, requestBody, EmailDTO.class);
+
+            if(response != null){
+                Message msg = new Message();
+                msg.setText("Correo enviado exitosamente.");
+                msg.setType(TypesResponse.SUCCESS);
+                return ResponseEntity.ok(msg);
+
+            }else{
+                Message errorMsg = new Message();
+                errorMsg.setText("La respuesta fue nula.");
+                errorMsg.setType(TypesResponse.ERROR);
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorMsg);
+            }
+        } catch (Exception e){
+            Message errorMsg = new Message();
+            errorMsg.setText("Error al llamar a la API: " + e.getMessage());
+            errorMsg.setType(TypesResponse.ERROR);
+
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorMsg);
+        }
+    }
+
     //Chat default
     @Transactional(readOnly = true)
     public ResponseEntity<Message> getApi(String message, String sessionId) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://www.pathogens.ibt.unam.mx/webhook/message";
+        String url = "http://132.248.32.197:5678/webhook/message";
 
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("chatInput", message);
@@ -56,7 +93,7 @@ public class N8nService {
 
     public ResponseEntity<Message> sendFile(MultipartFile file) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://www.pathogens.ibt.unam.mx/webhook/file";
+        String url = "http://132.248.32.197:5678/webhook/file";
 
         try{
             HttpHeaders headers = new HttpHeaders();
@@ -104,7 +141,7 @@ public class N8nService {
     @Transactional(readOnly = true)
     public ResponseEntity<Message> getApiCotizar(String message, String sessionId) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://www.pathogens.ibt.unam.mx/webhook/messageCotizacion";
+        String url = "http://132.248.32.197:5678/webhook/messageCotizacion";
 
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("chatInput", message);
@@ -136,7 +173,7 @@ public class N8nService {
 
     public ResponseEntity<Message> sendFileCotizar(MultipartFile file) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://www.pathogens.ibt.unam.mx/webhook/fileCotizacion";
+        String url = "http://132.248.32.197:5678/webhook/fileCotizacion";
 
         try{
             HttpHeaders headers = new HttpHeaders();
@@ -184,7 +221,7 @@ public class N8nService {
     @Transactional(readOnly = true)
     public ResponseEntity<Message> getApiSisbi(String message, String sessionId) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://www.pathogens.ibt.unam.mx/webhook/messageSisbi";
+        String url = "http://132.248.32.197:5678/webhook/messageSisbi";
 
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("chatInput", message);
@@ -216,7 +253,7 @@ public class N8nService {
 
     public ResponseEntity<Message> sendFileSisbi(MultipartFile file) {
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://www.pathogens.ibt.unam.mx/webhook/fileSisbi";
+        String url = "http://132.248.32.197:5678/webhook/fileSisbi";
 
         try{
             HttpHeaders headers = new HttpHeaders();
